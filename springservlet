@@ -1,1 +1,26 @@
-this is springservelet file that will conatin main servelt class for forwarding request on jsp page.
+/*this is springservelet file that will conatin main servelt class for forwarding request on jsp page.*/
+
+package in.co.codeplanet;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class Test
+{
+	@RequestMapping(value="/")
+	public String index()
+	{
+		return "index";
+	
+	}
+	
+	@RequestMapping(value="/register")
+	public String register()
+	{
+		return "register";
+	
+	}
+
+}
+
